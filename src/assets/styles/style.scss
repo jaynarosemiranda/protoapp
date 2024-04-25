@@ -65,7 +65,7 @@ header {
     align-items: center;
     position: fixed;
     top: 0;
-    padding: 15px 200px;
+    padding: 12px 200px;
     right: 0;
     left: 0;
     z-index: 100;
@@ -73,8 +73,10 @@ header {
       drop-shadow(0 8px 5px rgb(0 0 0 / 0.08));
 
     a {
-      font-weight: 500;
+      font-weight: 400;
       color: var(--primaryFontColor);
+      font-size: 1rem;
+      letter-spacing: -0.025em;
 
       &.router-link-exact-active {
         color: var(--primaryFontColor);
@@ -95,18 +97,19 @@ header {
       align-items: center;
 
       &__image {
-        width: 50px;
+        width: 40px;
         height: auto;
       }
 
       &__title {
         margin-left: 0.3em;
         font-weight: 500;
+        font-size: 1.125rem;
       }
     }
     &__menu {
       float: right;
-      z-index: 100;
+      z-index: 50;
 
       &--btn {
         background: none;

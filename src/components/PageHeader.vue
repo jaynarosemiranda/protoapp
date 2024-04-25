@@ -14,7 +14,7 @@
       </transition>
 
       <label for="" class="nav__menu">
-        <button @click="toggleMenu" class="nav__menu--btn">
+        <button @click="toggleMenu" class="nav__menu--btn" id="nav__menu--btn">
           <font-awesome-icon :icon="['fas', 'bars']" v-if="!isActive" />
           <font-awesome-icon :icon="['fas', 'xmark']" v-if="isActive" />
         </button>
